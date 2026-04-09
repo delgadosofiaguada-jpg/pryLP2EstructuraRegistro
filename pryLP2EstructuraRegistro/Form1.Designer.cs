@@ -47,6 +47,7 @@
             this.cmdListar = new System.Windows.Forms.Button();
             this.lblTotDeuda = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.cmdDeudores = new System.Windows.Forms.Button();
             this.gbCargaDatos.SuspendLayout();
             this.gbConsulta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
@@ -70,6 +71,7 @@
             this.gbCargaDatos.TabIndex = 0;
             this.gbCargaDatos.TabStop = false;
             this.gbCargaDatos.Text = "Carga de datos";
+            this.gbCargaDatos.Enter += new System.EventHandler(this.gbCargaDatos_Enter);
             // 
             // cmdCargar
             // 
@@ -227,11 +229,23 @@
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 10;
             // 
+            // cmdDeudores
+            // 
+            this.cmdDeudores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDeudores.Location = new System.Drawing.Point(285, 525);
+            this.cmdDeudores.Name = "cmdDeudores";
+            this.cmdDeudores.Size = new System.Drawing.Size(116, 30);
+            this.cmdDeudores.TabIndex = 11;
+            this.cmdDeudores.Text = "Deudores";
+            this.cmdDeudores.UseVisualStyleBackColor = true;
+            this.cmdDeudores.Click += new System.EventHandler(this.cmdDeudores_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 567);
+            this.Controls.Add(this.cmdDeudores);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblTotDeuda);
             this.Controls.Add(this.gbConsulta);
@@ -270,6 +284,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clDeuda;
         private System.Windows.Forms.Label lblTotDeuda;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button cmdDeudores;
     }
 }
 
