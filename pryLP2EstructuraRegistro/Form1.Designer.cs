@@ -162,6 +162,7 @@
             this.gbConsulta.TabIndex = 9;
             this.gbConsulta.TabStop = false;
             this.gbConsulta.Text = "Consulta de Datos";
+            this.gbConsulta.Enter += new System.EventHandler(this.gbConsulta_Enter);
             // 
             // dgvConsulta
             // 
@@ -175,6 +176,7 @@
             this.dgvConsulta.Name = "dgvConsulta";
             this.dgvConsulta.Size = new System.Drawing.Size(520, 206);
             this.dgvConsulta.TabIndex = 9;
+            this.dgvConsulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsulta_CellContentClick);
             // 
             // clCodigo
             // 

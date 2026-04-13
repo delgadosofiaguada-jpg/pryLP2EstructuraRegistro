@@ -34,21 +34,21 @@ namespace pryLP2EstructuraRegistro
 
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-            if (IND < Clientes.Length)
+            if (Vector.IND < Vector.Clientes.Length)
             {
                 Int32 i = 0;
-                while (Clientes[i].Codigo != Convert.ToInt32(txtCodigo.Text) && i<IND)//dentro del rango, busca el codigo que ingreso
+                while (Vector.Clientes[i].Codigo != Convert.ToInt32(txtCodigo.Text) && i<IND)//dentro del rango, busca el codigo que ingreso
                 {
                     i++;
                 }
 
-                if (i==IND)
+                if (i==Vector.IND)
                 {
-                    Clientes[IND].Codigo = Convert.ToInt32(txtCodigo.Text);
-                    Clientes[IND].Usuario = txtUsuario.Text;
-                    Clientes[IND].Deuda = Convert.ToDecimal(txtDeuda.Text);
-                    Clientes[IND].Limite = Convert.ToDecimal(txtLimCredito.Text);
-                    IND++;
+                   Vector. Clientes[IND].Codigo = Convert.ToInt32(txtCodigo.Text);
+                   Vector.Clientes[IND].Usuario = txtUsuario.Text;
+                   Vector.Clientes[IND].Deuda = Convert.ToDecimal(txtDeuda.Text);
+                   Vector.Clientes[IND].Limite = Convert.ToDecimal(txtLimCredito.Text);
+                    Vector.IND++;
                     MessageBox.Show("Cliente cargado correctamente");
                     txtCodigo.Text = "";
                     txtUsuario.Text = "";
@@ -78,10 +78,10 @@ namespace pryLP2EstructuraRegistro
         {
             Decimal TotalDeuda = 0;
             dgvConsulta.Rows.Clear();
-            for (int i = 0; i < IND; i++)
+            for (int i = 0; i < Vector.IND; i++)
             {
-                dgvConsulta.Rows.Add(Clientes[i].Codigo, Clientes[i].Usuario, Clientes[i].Limite, Clientes[i].Deuda);
-                TotalDeuda = TotalDeuda + Clientes[i].Deuda;
+                dgvConsulta.Rows.Add(Vector.Clientes[i].Codigo, Vector.Clientes[i].Usuario, Vector.Clientes[i].Limite, Vector.Clientes[i].Deuda);
+                TotalDeuda = TotalDeuda + Vector.Clientes[i].Deuda;
             }
             lblTotal.Text = TotalDeuda.ToString();
         }
@@ -131,21 +131,21 @@ namespace pryLP2EstructuraRegistro
 
         private void precarga()
         {
-            Clientes[IND].Codigo = 10;
-            Clientes[IND].Usuario = "Ana";
-            Clientes[IND].Deuda = 1000;
-            Clientes[IND].Limite = 10000;
-            IND++;
-            Clientes[IND].Codigo = 20;
-            Clientes[IND].Usuario = "Diego";
-            Clientes[IND].Deuda = 0;
-            Clientes[IND].Limite = 20000;
-            IND++;
-            Clientes[IND].Codigo = 30;
-            Clientes[IND].Usuario = "Maria";
-            Clientes[IND].Deuda = 3000;
-            Clientes[IND].Limite = 30000;
-            IND++;
+            Vector.Clientes[IND].Codigo = 10;
+            Vector. Clientes[IND].Usuario = "Ana";
+            Vector.Clientes[IND].Deuda = 1000;
+            Vector.Clientes[IND].Limite = 10000;
+            Vector.IND++;
+            Vector.Clientes[IND].Codigo = 20;
+            Vector.Clientes[IND].Usuario = "Diego";
+            Vector.Clientes[IND].Deuda = 0;
+            Vector.Clientes[IND].Limite = 20000;
+            Vector.IND++;
+            Vector.Clientes[IND].Codigo = 30;
+            Vector.Clientes[IND].Usuario = "Maria";
+            Vector.Clientes[IND].Deuda = 3000;
+            Vector.Clientes[IND].Limite = 30000;
+            Vector.IND++;
             
         }
 
@@ -153,15 +153,25 @@ namespace pryLP2EstructuraRegistro
         {
             Decimal TotalDeuda = 0;
             dgvConsulta.Rows.Clear();
-            for (int i = 0; i < IND; i++)
+            for (int i = 0; i < Vector.IND; i++)
             {
-               if (Clientes[i].Deuda>0)
+               if (Vector.Clientes[i].Deuda>0)
                {
-                   dgvConsulta.Rows.Add(Clientes[i].Codigo, Clientes[i].Usuario, Clientes[i].Limite, Clientes[i].Deuda);
-                   TotalDeuda = TotalDeuda + Clientes[i].Deuda;
+                   dgvConsulta.Rows.Add(Vector.Clientes[i].Codigo, Vector.Clientes[i].Usuario, Vector.Clientes[i].Limite, Vector.Clientes[i].Deuda);
+                   TotalDeuda = TotalDeuda + Vector.Clientes[i].Deuda;
                }
             }
             lblTotal.Text = TotalDeuda.ToString();
+        }
+
+        private void dgvConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gbConsulta_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
