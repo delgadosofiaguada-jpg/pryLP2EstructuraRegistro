@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.gbConsulta = new System.Windows.Forms.GroupBox();
-            this.lblCampo = new System.Windows.Forms.Label();
-            this.lblModo = new System.Windows.Forms.Label();
-            this.cbCampo = new System.Windows.Forms.ComboBox();
-            this.cbMando = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmdListar = new System.Windows.Forms.Button();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.clCódigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clLimite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmdListar = new System.Windows.Forms.Button();
+            this.cbMando = new System.Windows.Forms.ComboBox();
+            this.cbCampo = new System.Windows.Forms.ComboBox();
+            this.lblModo = new System.Windows.Forms.Label();
+            this.lblCampo = new System.Windows.Forms.Label();
             this.gbConsulta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // gbConsulta
             // 
             this.gbConsulta.Controls.Add(this.cmdListar);
-            this.gbConsulta.Controls.Add(this.dataGridView1);
+            this.gbConsulta.Controls.Add(this.dgvDatos);
             this.gbConsulta.Controls.Add(this.cbMando);
             this.gbConsulta.Controls.Add(this.cbCampo);
             this.gbConsulta.Controls.Add(this.lblModo);
@@ -59,61 +59,28 @@
             this.gbConsulta.TabStop = false;
             this.gbConsulta.Text = "Consulta de datos";
             // 
-            // lblCampo
+            // cmdListar
             // 
-            this.lblCampo.AutoSize = true;
-            this.lblCampo.Location = new System.Drawing.Point(15, 35);
-            this.lblCampo.Name = "lblCampo";
-            this.lblCampo.Size = new System.Drawing.Size(51, 16);
-            this.lblCampo.TabIndex = 0;
-            this.lblCampo.Text = "Campo";
-            this.lblCampo.Click += new System.EventHandler(this.label2_Click);
+            this.cmdListar.Location = new System.Drawing.Point(374, 366);
+            this.cmdListar.Name = "cmdListar";
+            this.cmdListar.Size = new System.Drawing.Size(86, 26);
+            this.cmdListar.TabIndex = 5;
+            this.cmdListar.Text = "Listar";
+            this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
-            // lblModo
+            // dgvDatos
             // 
-            this.lblModo.AutoSize = true;
-            this.lblModo.Location = new System.Drawing.Point(247, 32);
-            this.lblModo.Name = "lblModo";
-            this.lblModo.Size = new System.Drawing.Size(42, 16);
-            this.lblModo.TabIndex = 1;
-            this.lblModo.Text = "Modo";
-            // 
-            // cbCampo
-            // 
-            this.cbCampo.FormattingEnabled = true;
-            this.cbCampo.Items.AddRange(new object[] {
-            "Código",
-            "Nombre",
-            "Límite",
-            "Deuda"});
-            this.cbCampo.Location = new System.Drawing.Point(73, 29);
-            this.cbCampo.Name = "cbCampo";
-            this.cbCampo.Size = new System.Drawing.Size(121, 24);
-            this.cbCampo.TabIndex = 2;
-            // 
-            // cbMando
-            // 
-            this.cbMando.FormattingEnabled = true;
-            this.cbMando.Items.AddRange(new object[] {
-            "Ascendente",
-            "Descendente"});
-            this.cbMando.Location = new System.Drawing.Point(295, 27);
-            this.cbMando.Name = "cbMando";
-            this.cbMando.Size = new System.Drawing.Size(121, 24);
-            this.cbMando.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clCódigo,
             this.clNombre,
             this.clLimite,
             this.clDeuda});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 84);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(442, 232);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvDatos.Location = new System.Drawing.Point(18, 84);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(442, 232);
+            this.dgvDatos.TabIndex = 4;
             // 
             // clCódigo
             // 
@@ -135,14 +102,48 @@
             this.clDeuda.HeaderText = "Deuda";
             this.clDeuda.Name = "clDeuda";
             // 
-            // cmdListar
+            // cbMando
             // 
-            this.cmdListar.Location = new System.Drawing.Point(374, 366);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(86, 26);
-            this.cmdListar.TabIndex = 5;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = true;
+            this.cbMando.FormattingEnabled = true;
+            this.cbMando.Items.AddRange(new object[] {
+            "Ascendente",
+            "Descendente"});
+            this.cbMando.Location = new System.Drawing.Point(295, 27);
+            this.cbMando.Name = "cbMando";
+            this.cbMando.Size = new System.Drawing.Size(121, 24);
+            this.cbMando.TabIndex = 3;
+            // 
+            // cbCampo
+            // 
+            this.cbCampo.FormattingEnabled = true;
+            this.cbCampo.Items.AddRange(new object[] {
+            "Código",
+            "Nombre",
+            "Límite",
+            "Deuda"});
+            this.cbCampo.Location = new System.Drawing.Point(73, 29);
+            this.cbCampo.Name = "cbCampo";
+            this.cbCampo.Size = new System.Drawing.Size(121, 24);
+            this.cbCampo.TabIndex = 2;
+            // 
+            // lblModo
+            // 
+            this.lblModo.AutoSize = true;
+            this.lblModo.Location = new System.Drawing.Point(247, 32);
+            this.lblModo.Name = "lblModo";
+            this.lblModo.Size = new System.Drawing.Size(42, 16);
+            this.lblModo.TabIndex = 1;
+            this.lblModo.Text = "Modo";
+            // 
+            // lblCampo
+            // 
+            this.lblCampo.AutoSize = true;
+            this.lblCampo.Location = new System.Drawing.Point(15, 35);
+            this.lblCampo.Name = "lblCampo";
+            this.lblCampo.Size = new System.Drawing.Size(51, 16);
+            this.lblCampo.TabIndex = 0;
+            this.lblCampo.Text = "Campo";
+            this.lblCampo.Click += new System.EventHandler(this.label2_Click);
             // 
             // frmListarOrdenado
             // 
@@ -150,9 +151,10 @@
             this.Controls.Add(this.gbConsulta);
             this.Name = "frmListarOrdenado";
             this.Text = "Listar Ordenado";
+            this.Load += new System.EventHandler(this.frmListarOrdenado_Load);
             this.gbConsulta.ResumeLayout(false);
             this.gbConsulta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -166,7 +168,7 @@
         private System.Windows.Forms.ComboBox cbCampo;
         private System.Windows.Forms.Label lblModo;
         private System.Windows.Forms.ComboBox cbMando;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.DataGridViewTextBoxColumn clCódigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn clLimite;

@@ -89,7 +89,7 @@ namespace pryLP2EstructuraRegistro
         private void Form1_Load(object sender, EventArgs e)
         {
             cmdCargar.Enabled = false;
-            precarga();
+            Vector.precarga();
             Listar();
         }
 
@@ -127,26 +127,6 @@ namespace pryLP2EstructuraRegistro
         private void gbCargaDatos_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void precarga()
-        {
-            Vector.Clientes[IND].Codigo = 10;
-            Vector. Clientes[IND].Usuario = "Ana";
-            Vector.Clientes[IND].Deuda = 1000;
-            Vector.Clientes[IND].Limite = 10000;
-            Vector.IND++;
-            Vector.Clientes[IND].Codigo = 20;
-            Vector.Clientes[IND].Usuario = "Diego";
-            Vector.Clientes[IND].Deuda = 0;
-            Vector.Clientes[IND].Limite = 20000;
-            Vector.IND++;
-            Vector.Clientes[IND].Codigo = 30;
-            Vector.Clientes[IND].Usuario = "Maria";
-            Vector.Clientes[IND].Deuda = 3000;
-            Vector.Clientes[IND].Limite = 30000;
-            Vector.IND++;
-            
         }
 
         private void cmdDeudores_Click(object sender, EventArgs e)
