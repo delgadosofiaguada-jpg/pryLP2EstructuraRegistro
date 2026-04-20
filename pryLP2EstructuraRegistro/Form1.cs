@@ -65,32 +65,22 @@ namespace pryLP2EstructuraRegistro
            {
                 MessageBox.Show("No se pueden cargar mas clientes");
            }
-            Listar();
+            
             
         }
 
         private void cmdListar_Click(object sender, EventArgs e)
         {
-            Listar();
+            
         }
 
-        private void Listar()
-        {
-            Decimal TotalDeuda = 0;
-            dgvConsulta.Rows.Clear();
-            for (int i = 0; i < Vector.IND; i++)
-            {
-                dgvConsulta.Rows.Add(Vector.Clientes[i].Codigo, Vector.Clientes[i].Usuario, Vector.Clientes[i].Limite, Vector.Clientes[i].Deuda);
-                TotalDeuda = TotalDeuda + Vector.Clientes[i].Deuda;
-            }
-            lblTotal.Text = TotalDeuda.ToString();
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
             cmdCargar.Enabled = false;
             Vector.precarga();
-            Listar();
+           
         }
 
         private void Comprobar()
@@ -132,12 +122,12 @@ namespace pryLP2EstructuraRegistro
         private void cmdDeudores_Click(object sender, EventArgs e)
         {
             Decimal TotalDeuda = 0;
-            dgvConsulta.Rows.Clear();
+            //dgvConsulta.Rows.Clear();
             for (int i = 0; i < Vector.IND; i++)
             {
                if (Vector.Clientes[i].Deuda>0)
                {
-                   dgvConsulta.Rows.Add(Vector.Clientes[i].Codigo, Vector.Clientes[i].Usuario, Vector.Clientes[i].Limite, Vector.Clientes[i].Deuda);
+                   //dgvConsulta.Rows.Add(Vector.Clientes[i].Codigo, Vector.Clientes[i].Usuario, Vector.Clientes[i].Limite, Vector.Clientes[i].Deuda);
                    TotalDeuda = TotalDeuda + Vector.Clientes[i].Deuda;
                }
             }

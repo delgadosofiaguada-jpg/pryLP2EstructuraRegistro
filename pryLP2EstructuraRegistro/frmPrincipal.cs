@@ -40,5 +40,17 @@ namespace pryLP2EstructuraRegistro
             formulario.MdiParent=this; 
             formulario.Show();
         }
+
+        private void listarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new frmListadoClientes();
+            formulario.Show();
+        }
+
+        private void listadoDeTodosLosDeudoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new frmClientesDeudores();
+            formulario.Show();
+        }
     }
 }

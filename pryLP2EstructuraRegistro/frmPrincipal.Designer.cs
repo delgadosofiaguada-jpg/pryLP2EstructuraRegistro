@@ -35,6 +35,7 @@
             this.listadoDeTodosLosClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeTodosLosDeudoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.ventasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(836, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,7 +63,8 @@
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarNuevoClienteToolStripMenuItem,
             this.listadoDeTodosLosClientesToolStripMenuItem,
-            this.listadoDeTodosLosDeudoresToolStripMenuItem});
+            this.listadoDeTodosLosDeudoresToolStripMenuItem,
+            this.listarClientesToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.clientesToolStripMenuItem.Text = "Clientes";
@@ -77,15 +79,16 @@
             // listadoDeTodosLosClientesToolStripMenuItem
             // 
             this.listadoDeTodosLosClientesToolStripMenuItem.Name = "listadoDeTodosLosClientesToolStripMenuItem";
-            this.listadoDeTodosLosClientesToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
-            this.listadoDeTodosLosClientesToolStripMenuItem.Text = "Listado de todos los clientes...";
+            this.listadoDeTodosLosClientesToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.listadoDeTodosLosClientesToolStripMenuItem.Text = "Listado ordenado de todos los clientes...";
             this.listadoDeTodosLosClientesToolStripMenuItem.Click += new System.EventHandler(this.listadoDeTodosLosClientesToolStripMenuItem_Click);
             // 
             // listadoDeTodosLosDeudoresToolStripMenuItem
             // 
             this.listadoDeTodosLosDeudoresToolStripMenuItem.Name = "listadoDeTodosLosDeudoresToolStripMenuItem";
-            this.listadoDeTodosLosDeudoresToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.listadoDeTodosLosDeudoresToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
             this.listadoDeTodosLosDeudoresToolStripMenuItem.Text = "Listado de todos los deudores...";
+            this.listadoDeTodosLosDeudoresToolStripMenuItem.Click += new System.EventHandler(this.listadoDeTodosLosDeudoresToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem
             // 
@@ -93,13 +96,20 @@
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
+            // listarClientesToolStripMenuItem
+            // 
+            this.listarClientesToolStripMenuItem.Name = "listarClientesToolStripMenuItem";
+            this.listarClientesToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.listarClientesToolStripMenuItem.Text = "Listar clientes...";
+            this.listarClientesToolStripMenuItem.Click += new System.EventHandler(this.listarClientesToolStripMenuItem_Click);
+            // 
             // frmManejoClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::pryLP2EstructuraRegistro.Properties.Resources.dark_blue_pink_3840x2160_12661;
+            this.BackgroundImage = global::pryLP2EstructuraRegistro.Properties.Resources.papappa;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(836, 492);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -122,5 +132,6 @@
         private System.Windows.Forms.ToolStripMenuItem agregarNuevoClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDeTodosLosClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDeTodosLosDeudoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarClientesToolStripMenuItem;
     }
 }

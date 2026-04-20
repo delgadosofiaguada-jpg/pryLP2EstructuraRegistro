@@ -121,4 +121,7 @@
   <data name="dark-blue-pink-3840x2160-12661" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dark-blue-pink-3840x2160-12661.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="papappa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\papappa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

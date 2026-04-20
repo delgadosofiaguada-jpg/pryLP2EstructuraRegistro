@@ -38,19 +38,8 @@
             this.lblDeuda = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.gbConsulta = new System.Windows.Forms.GroupBox();
-            this.dgvConsulta = new System.Windows.Forms.DataGridView();
-            this.clCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clLimCredito = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmdListar = new System.Windows.Forms.Button();
-            this.lblTotDeuda = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.cmdDeudores = new System.Windows.Forms.Button();
             this.gbCargaDatos.SuspendLayout();
-            this.gbConsulta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // gbCargaDatos
@@ -75,7 +64,7 @@
             // 
             // cmdCargar
             // 
-            this.cmdCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCargar.Location = new System.Drawing.Point(390, 139);
             this.cmdCargar.Name = "cmdCargar";
             this.cmdCargar.Size = new System.Drawing.Size(116, 30);
@@ -152,77 +141,6 @@
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código:";
             // 
-            // gbConsulta
-            // 
-            this.gbConsulta.Controls.Add(this.dgvConsulta);
-            this.gbConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbConsulta.Location = new System.Drawing.Point(23, 209);
-            this.gbConsulta.Name = "gbConsulta";
-            this.gbConsulta.Size = new System.Drawing.Size(532, 246);
-            this.gbConsulta.TabIndex = 9;
-            this.gbConsulta.TabStop = false;
-            this.gbConsulta.Text = "Consulta de Datos";
-            this.gbConsulta.Enter += new System.EventHandler(this.gbConsulta_Enter);
-            // 
-            // dgvConsulta
-            // 
-            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clCodigo,
-            this.clUsuario,
-            this.clLimCredito,
-            this.clDeuda});
-            this.dgvConsulta.Location = new System.Drawing.Point(6, 25);
-            this.dgvConsulta.Name = "dgvConsulta";
-            this.dgvConsulta.Size = new System.Drawing.Size(520, 206);
-            this.dgvConsulta.TabIndex = 9;
-            this.dgvConsulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsulta_CellContentClick);
-            // 
-            // clCodigo
-            // 
-            this.clCodigo.HeaderText = "Código";
-            this.clCodigo.Name = "clCodigo";
-            this.clCodigo.Width = 120;
-            // 
-            // clUsuario
-            // 
-            this.clUsuario.HeaderText = "Usuario";
-            this.clUsuario.Name = "clUsuario";
-            this.clUsuario.Width = 120;
-            // 
-            // clLimCredito
-            // 
-            this.clLimCredito.HeaderText = "Límite de crédito";
-            this.clLimCredito.Name = "clLimCredito";
-            this.clLimCredito.Width = 120;
-            // 
-            // clDeuda
-            // 
-            this.clDeuda.HeaderText = "Deuda";
-            this.clDeuda.Name = "clDeuda";
-            this.clDeuda.Width = 120;
-            // 
-            // cmdListar
-            // 
-            this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdListar.Location = new System.Drawing.Point(433, 525);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(116, 30);
-            this.cmdListar.TabIndex = 8;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = true;
-            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
-            // 
-            // lblTotDeuda
-            // 
-            this.lblTotDeuda.AutoSize = true;
-            this.lblTotDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotDeuda.Location = new System.Drawing.Point(222, 482);
-            this.lblTotDeuda.Name = "lblTotDeuda";
-            this.lblTotDeuda.Size = new System.Drawing.Size(89, 18);
-            this.lblTotDeuda.TabIndex = 9;
-            this.lblTotDeuda.Text = "Total deuda:";
-            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -231,35 +149,19 @@
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 10;
             // 
-            // cmdDeudores
-            // 
-            this.cmdDeudores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdDeudores.Location = new System.Drawing.Point(285, 525);
-            this.cmdDeudores.Name = "cmdDeudores";
-            this.cmdDeudores.Size = new System.Drawing.Size(116, 30);
-            this.cmdDeudores.TabIndex = 11;
-            this.cmdDeudores.Text = "Deudores";
-            this.cmdDeudores.UseVisualStyleBackColor = true;
-            this.cmdDeudores.Click += new System.EventHandler(this.cmdDeudores_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 567);
-            this.Controls.Add(this.cmdDeudores);
+            this.ClientSize = new System.Drawing.Size(600, 215);
             this.Controls.Add(this.lblTotal);
-            this.Controls.Add(this.lblTotDeuda);
-            this.Controls.Add(this.gbConsulta);
-            this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.gbCargaDatos);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Clientes";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbCargaDatos.ResumeLayout(false);
             this.gbCargaDatos.PerformLayout();
-            this.gbConsulta.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,16 +179,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblLimCredito;
         private System.Windows.Forms.Button cmdCargar;
-        private System.Windows.Forms.GroupBox gbConsulta;
-        private System.Windows.Forms.DataGridView dgvConsulta;
-        private System.Windows.Forms.Button cmdListar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clCodigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clLimCredito;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clDeuda;
-        private System.Windows.Forms.Label lblTotDeuda;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Button cmdDeudores;
     }
 }
 
