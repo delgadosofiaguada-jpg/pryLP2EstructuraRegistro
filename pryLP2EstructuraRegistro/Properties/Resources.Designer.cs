@@ -63,9 +63,29 @@ namespace pryLP2EstructuraRegistro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap amii {
+            get {
+                object obj = ResourceManager.GetObject("amii", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dark_blue_pink_3840x2160_12661 {
             get {
                 object obj = ResourceManager.GetObject("dark-blue-pink-3840x2160-12661", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap immm {
+            get {
+                object obj = ResourceManager.GetObject("immm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
