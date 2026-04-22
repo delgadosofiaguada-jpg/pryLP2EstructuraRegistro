@@ -52,5 +52,10 @@ namespace pryLP2EstructuraRegistro
             Form formulario = new frmClientesDeudores();
             formulario.Show();
         }
+
+        private void salirCerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

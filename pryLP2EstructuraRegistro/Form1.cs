@@ -37,12 +37,13 @@ namespace pryLP2EstructuraRegistro
             if (Vector.IND < Vector.Clientes.Length)
             {
                 Int32 i = 0;
-                while (Vector.Clientes[i].Codigo != Convert.ToInt32(txtCodigo.Text) && i<IND)//dentro del rango, busca el codigo que ingreso
+                Int32 codigoBuscado = Convert.ToInt32(txtCodigo.Text);
+                while ((i < Vector.IND && Vector.Clientes[i].Codigo != codigoBuscado))//dentro del rango, busca el codigo que ingreso
                 {
                     i++;
                 }
 
-                if (i==Vector.IND)
+                if (i == Vector.IND)
                 {
                    Vector. Clientes[IND].Codigo = Convert.ToInt32(txtCodigo.Text);
                    Vector.Clientes[IND].Usuario = txtUsuario.Text;

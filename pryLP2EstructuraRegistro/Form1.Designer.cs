@@ -54,9 +54,11 @@
             this.gbCargaDatos.Controls.Add(this.lblUsuario);
             this.gbCargaDatos.Controls.Add(this.lblCodigo);
             this.gbCargaDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbCargaDatos.Location = new System.Drawing.Point(23, 12);
+            this.gbCargaDatos.Location = new System.Drawing.Point(31, 15);
+            this.gbCargaDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbCargaDatos.Name = "gbCargaDatos";
-            this.gbCargaDatos.Size = new System.Drawing.Size(532, 175);
+            this.gbCargaDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbCargaDatos.Size = new System.Drawing.Size(709, 215);
             this.gbCargaDatos.TabIndex = 0;
             this.gbCargaDatos.TabStop = false;
             this.gbCargaDatos.Text = "Carga de datos";
@@ -65,9 +67,10 @@
             // cmdCargar
             // 
             this.cmdCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCargar.Location = new System.Drawing.Point(390, 139);
+            this.cmdCargar.Location = new System.Drawing.Point(520, 171);
+            this.cmdCargar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdCargar.Name = "cmdCargar";
-            this.cmdCargar.Size = new System.Drawing.Size(116, 30);
+            this.cmdCargar.Size = new System.Drawing.Size(155, 37);
             this.cmdCargar.TabIndex = 8;
             this.cmdCargar.Text = "Cargar";
             this.cmdCargar.UseVisualStyleBackColor = true;
@@ -75,87 +78,97 @@
             // 
             // txtLimCredito
             // 
-            this.txtLimCredito.Location = new System.Drawing.Point(373, 91);
+            this.txtLimCredito.Location = new System.Drawing.Point(497, 112);
+            this.txtLimCredito.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLimCredito.Name = "txtLimCredito";
-            this.txtLimCredito.Size = new System.Drawing.Size(133, 22);
+            this.txtLimCredito.Size = new System.Drawing.Size(176, 26);
             this.txtLimCredito.TabIndex = 7;
             this.txtLimCredito.TextChanged += new System.EventHandler(this.txtLimCredito_TextChanged);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(373, 29);
+            this.txtUsuario.Location = new System.Drawing.Point(497, 36);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(133, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(176, 26);
             this.txtUsuario.TabIndex = 6;
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtDeuda
             // 
-            this.txtDeuda.Location = new System.Drawing.Point(73, 91);
+            this.txtDeuda.Location = new System.Drawing.Point(97, 112);
+            this.txtDeuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(133, 22);
+            this.txtDeuda.Size = new System.Drawing.Size(176, 26);
             this.txtDeuda.TabIndex = 5;
             this.txtDeuda.TextChanged += new System.EventHandler(this.txtDeuda_TextChanged);
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(77, 27);
+            this.txtCodigo.Location = new System.Drawing.Point(103, 33);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(133, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(176, 26);
             this.txtCodigo.TabIndex = 4;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // lblLimCredito
             // 
             this.lblLimCredito.AutoSize = true;
-            this.lblLimCredito.Location = new System.Drawing.Point(259, 97);
+            this.lblLimCredito.Location = new System.Drawing.Point(345, 119);
+            this.lblLimCredito.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLimCredito.Name = "lblLimCredito";
-            this.lblLimCredito.Size = new System.Drawing.Size(108, 16);
+            this.lblLimCredito.Size = new System.Drawing.Size(139, 20);
             this.lblLimCredito.TabIndex = 3;
             this.lblLimCredito.Text = "Límite de crédito:";
             // 
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
-            this.lblDeuda.Location = new System.Drawing.Point(16, 97);
+            this.lblDeuda.Location = new System.Drawing.Point(21, 119);
+            this.lblDeuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeuda.Name = "lblDeuda";
-            this.lblDeuda.Size = new System.Drawing.Size(51, 16);
+            this.lblDeuda.Size = new System.Drawing.Size(63, 20);
             this.lblDeuda.TabIndex = 2;
             this.lblDeuda.Text = "Deuda:";
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(299, 32);
+            this.lblUsuario.Location = new System.Drawing.Point(399, 39);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(57, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(72, 20);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario:";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(16, 32);
+            this.lblCodigo.Location = new System.Drawing.Point(21, 39);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(66, 20);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código:";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(326, 486);
+            this.lblTotal.Location = new System.Drawing.Point(435, 598);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(0, 13);
+            this.lblTotal.Size = new System.Drawing.Size(0, 16);
             this.lblTotal.TabIndex = 10;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 215);
+            this.ClientSize = new System.Drawing.Size(764, 260);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.gbCargaDatos);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Clientes";

@@ -42,5 +42,10 @@ namespace pryLP2EstructuraRegistro
             lblCantClientes1.Text = CantidadClientes.ToString();
             lblPromDeuda1.Text = (TotalDeuda / CantidadClientes).ToString();
         }
+
+        private void lblTotalDeuda_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
