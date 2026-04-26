@@ -22,25 +22,7 @@ namespace pryLP2EstructuraRegistro
         //Declaración del INDICE
         static public Int32 IND = 0;
 
-        static public void precarga()
-        {
-            Clientes[IND].Codigo = 10;
-            Clientes[IND].Usuario = "Ana";
-            Clientes[IND].Deuda = 1000;
-            Clientes[IND].Limite = 10000;
-            IND++;
-            Clientes[IND].Codigo = 20;
-            Clientes[IND].Usuario = "Diego";
-            Clientes[IND].Deuda = 0;
-            Clientes[IND].Limite = 20000;
-            IND++;
-            Clientes[IND].Codigo = 30;
-            Clientes[IND].Usuario = "Maria";
-            Clientes[IND].Deuda = 3000;
-            Clientes[IND].Limite = 30000;
-            IND++;
-
-        }
+      
         static public void OrdenarCodigoAsc()
         {
             Int32 c = 0;

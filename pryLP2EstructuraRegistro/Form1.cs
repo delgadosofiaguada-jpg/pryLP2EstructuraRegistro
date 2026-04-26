@@ -18,7 +18,7 @@ namespace pryLP2EstructuraRegistro
         }
 
         //Declaracion de registro
-        private struct  RegCliente
+        private struct RegCliente
         {
             public Int32 Codigo;
             public String Usuario;
@@ -26,11 +26,9 @@ namespace pryLP2EstructuraRegistro
             public Decimal Limite;
         }
 
-        //Declaracion del vector
-        private RegCliente[] Clientes = new RegCliente[10];   
+       // Declaracion del vector
+        private RegCliente[] Clientes = new RegCliente[10];
 
-        //Declaracion del indice
-        private Int32 IND = 0;
 
         private void cmdCargar_Click(object sender, EventArgs e)
         {
@@ -45,16 +43,16 @@ namespace pryLP2EstructuraRegistro
 
                 if (i == Vector.IND)
                 {
-                   Vector. Clientes[IND].Codigo = Convert.ToInt32(txtCodigo.Text);
-                   Vector.Clientes[IND].Usuario = txtUsuario.Text;
-                   Vector.Clientes[IND].Deuda = Convert.ToDecimal(txtDeuda.Text);
-                   Vector.Clientes[IND].Limite = Convert.ToDecimal(txtLimCredito.Text);
-                    Vector.IND++;
-                    MessageBox.Show("Cliente cargado correctamente");
-                    txtCodigo.Text = "";
-                    txtUsuario.Text = "";
-                    txtDeuda.Text = "";
-                    txtLimCredito.Text = "";
+                   Vector. Clientes[Vector.IND].Codigo = Convert.ToInt32(txtCodigo.Text);
+                   Vector.Clientes[Vector.IND].Usuario = txtUsuario.Text;
+                   Vector.Clientes[Vector.IND].Deuda = Convert.ToDecimal(txtDeuda.Text);
+                   Vector.Clientes[Vector.IND].Limite = Convert.ToDecimal(txtLimCredito.Text);
+                   Vector.IND++;
+                   MessageBox.Show("Cliente cargado correctamente");
+                   txtCodigo.Text = "";
+                   txtUsuario.Text = "";
+                   txtDeuda.Text = "";
+                   txtLimCredito.Text = "";
                 }  
                 else
                 {
@@ -80,7 +78,7 @@ namespace pryLP2EstructuraRegistro
         private void Form1_Load(object sender, EventArgs e)
         {
             cmdCargar.Enabled = false;
-            Vector.precarga();
+           
            
         }
 

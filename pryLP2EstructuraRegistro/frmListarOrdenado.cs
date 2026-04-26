@@ -80,7 +80,8 @@ namespace pryLP2EstructuraRegistro
 
         private void frmListarOrdenado_Load(object sender, EventArgs e)
         {
-            Vector.precarga();
+            //precarga();
         }
+        
     }
 }

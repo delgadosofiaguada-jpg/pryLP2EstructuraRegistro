@@ -16,10 +16,9 @@ namespace pryLP2EstructuraRegistro
         {
             InitializeComponent();
         }
-
+    
         private void cmdListarDeudores_Click(object sender, EventArgs e)
         {
-            Vector.precarga();
             Listar();
         }
 

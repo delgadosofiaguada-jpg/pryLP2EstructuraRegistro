@@ -21,10 +21,10 @@ namespace pryLP2EstructuraRegistro
         {
 
         }
-
+       
         private void frmListadoClientes_Load(object sender, EventArgs e)
         {
-            Vector.precarga();
+            
             Listar();
         }
         private void Listar()
